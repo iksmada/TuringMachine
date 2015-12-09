@@ -3,7 +3,7 @@
 #include "rgb_lcd.h"
 
 #define TEMPOINICIO 5
-#define VALORMEDIO 512
+#define VALORMEDIO 5
 
 const int stepsPerRevolution = 24;
 rgb_lcd lcd;
@@ -24,7 +24,7 @@ void setup()
   Serial.begin(9600);
   pinMode(ledPin,OUTPUT);
  //Determina a velocidade inicial do motor 
- myStepper.setSpeed(5);
+ myStepper.setSpeed(20);
  lcd.begin(16, 2);
     
     lcd.setRGB(colorR, colorG, colorB);  
@@ -40,12 +40,12 @@ void loop() {
   
   //Print a message to the LCD.
   lcd.print("initiating in ..."); //printa na linha 0
-  for (int i=TEMPOINICIO;i>0;i--){
+  /*for (int i=TEMPOINICIO;i>0;i--){
     lcd.setCursor(0, 1); //linha 1
     lcd.print(i);
     lcd.print("s remaining");
     delay(1000);
-  }
+  }*/
   lcd.print(0);
  
  for(int i = 0;i<16;i++){
@@ -74,8 +74,8 @@ void loop() {
   lcd.print(valor);
     
   //Gira o motor no sentido horario a 180 graus
-  myStepper.step(12); // 12 = 24(passos por cliclo)/2
-
+  myStepper.step(6); // 12 = 24(passos por cliclo)/2
+  delay(1000);
   
  } 
 }
