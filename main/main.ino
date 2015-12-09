@@ -2,6 +2,9 @@
 #include <Wire.h>
 #include "rgb_lcd.h"
 
+#define TEMPOINICIO 5
+#define VALORMEDIO 512
+
 const int stepsPerRevolution = 24;
 rgb_lcd lcd;
 
@@ -21,48 +24,59 @@ void setup()
   Serial.begin(9600);
   pinMode(ledPin,OUTPUT);
  //Determina a velocidade inicial do motor 
- myStepper.setSpeed(1);
+ myStepper.setSpeed(5);
  lcd.begin(16, 2);
     
-    lcd.setRGB(colorR, colorG, colorB);
-    
-    // Print a message to the LCD.
-    lcd.print("hello, world!");
-
-    delay(1000);
+    lcd.setRGB(colorR, colorG, colorB);  
     digitalWrite(ledPin,HIGH);
 } 
   
-void loop() 
-{ 
- //Gira o motor no sentido horario a 90 graus
- /*for (int i = 0; i<=3; i++)
- {
- myStepper.step(-6); 
- delay(2000);
- }
+void loop() {
+  bool continua=true;
+  int valor;
+  String binario="";
+  int decimal=0;
+  String hexa;
   
- //Gira o motor no sentido anti-horario a 120 graus
- for (int i = 0; i<=2; i++)
- {
- myStepper.step(8); 
- delay(2000);
- }*/
+  //Print a message to the LCD.
+  lcd.print("initiating in ..."); //printa na linha 0
+  for (int i=TEMPOINICIO;i>0;i--){
+    lcd.setCursor(0, 1); //linha 1
+    lcd.print(i);
+    lcd.print("s remaining");
+    delay(1000);
+  }
+  lcd.print(0);
  
- //Gira o motor no sentido horario, aumentando a
- //velocidade gradativamente
- for (int i = -24; i<=24; i=i+48)
- {
- Serial.println(i);
- myStepper.setSpeed(60);
- myStepper.step(i);
- //delay(500);
- }
- lcd.setCursor(0, 1);
-    // print the number of seconds since reset:
-    lcd.print(analogRead(sensor));
+ for(int i = 0;i<16;i++){
+  //Leitura
+  valor = analogRead(sensor);
 
-    delay(100);
- //delay(500); 
+  //Interpretacao
+  if(valor>VALORMEDIO){//está claro 
+    binario.concat("1");
+    decimal = (decimal*2)+1;
+    }
+  else{//esta escuro
+    binario.concat("0");
+    decimal = (decimal*2);
+    }
+
+  //Escrevendo no LCD
+  lcd.clear(); //linha 1
+  lcd.print(binario);
+  
+  lcd.setCursor(0, 1); //linha 1
+  lcd.print(decimal);
+
+  lcd.setCursor(10, 1); //linha 1 penultima coluna
+  //lcd.print(decimal,HEX);
+  lcd.print(valor);
+    
+  //Gira o motor no sentido horario a 180 graus
+  myStepper.step(12); // 12 = 24(passos por cliclo)/2
+
+  
+ } 
 }
 
