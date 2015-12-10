@@ -11,13 +11,13 @@ Raphael Adamski 495913
  - Será usado um motor de passo com 24 passos por ciclo, modelo 15ba-h052-19, marca Minibea, com uma borracha na engrenagem para gerar mais atrito
  
  <img src="http://i.imgur.com/42vLGos.jpg" width="200">
- - Um sensor de lumisidade e um *display* de LCD do Groove Start Kit Plus, marca Seeed
+ - Um sensor de lumisidade do Groove Start Kit Plus, marca Seeed
  
  <img src="http://www.seeedstudio.com/wiki/images/thumb/1/1c/Twig-Light.jpg/400px-Twig-Light.jpg" width="200">
  - Um led para iluminar o sensor
  
  <img src="http://www.seeedstudio.com/wiki/images/thumb/e/e0/LED1.jpg/400px-LED1.jpg" width="200">
- - Display LCD RGD backlight v2.0, com 16 colunas e 2 linhas.
+ - Display LCD RGD backlight v2.0 do Groove Start Kit Plus, marca Seeed, com 16 colunas e 2 linhas.
 
  <img src="http://www.seeedstudio.com/wiki/images/thumb/0/03/Serial_LEC_RGB_Backlight_Lcd.jpg/400px-Serial_LEC_RGB_Backlight_Lcd.jpg" width="250">
  - Uma caixa para prender as peças
