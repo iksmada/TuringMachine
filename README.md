@@ -34,9 +34,14 @@ Raphael Adamski 495913
   A leitura sera feita rodando a fita para direita (motor roda no sentido horário).
   Um led ficará acima da fita e o sensor abaixo da fita, dentro da caixa, com um buraco acima dele (do mesmo tamanho dos buracos da fita) assim a luz ira apenas entrar na caixa quando a fita estiver perfurada.
   Interpretaremos a fita como um numero binário.
+  
+  <img src="http://i.imgur.com/E7bNhNx.jpg" height="150">
+  <img src="http://i.imgur.com/H4tLidi.jpg" height="150">
 
 ####Movimentação
   o motor ira girar, assim movimentando a fita, borracha servirá para aumentar o atrito, enquanto as outras partes ficam estáticas
+  
+  <img src="http://i.imgur.com/lEEKaYy.jpg" height="150">
 
 ####Display
   Na primeira linha Irá ser mostrado os valores lidos da esquerda para direita, supondo que o primeira leitura é o bit mais significativo, na segunda linha será mostrado o numero em decimal e hexadecimal.
@@ -47,11 +52,25 @@ Raphael Adamski 495913
   ![Esquemático feito no schematics.com](http://i.imgur.com/qZa9w4y.png?1)
   
 ##Resultado
+
+####teste
 https://youtu.be/PujN_2U0uNY
 
 [![video Youtube](http://img.youtube.com/vi/PujN_2U0uNY/0.jpg)](https://youtu.be/PujN_2U0uNY)
 
 OBS: neste primeiro video o display mostra o valor lido pelo sensor ao lado do número em decimal.
+
+####final
+https://youtu.be/ktRdkW8mEg4
+
+[![video Youtube](http://img.youtube.com/vi/ktRdkW8mEg4/0.jpg)](https://youtu.be/ktRdkW8mEg4)
+
+
+
+
+
+##Créditos
+
 
 ## Outros trabalhos desta disciplina
 
