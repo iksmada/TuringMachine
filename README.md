@@ -50,7 +50,10 @@ Raphael Adamski 495913
   Disponivel [aqui](http://schematics.com/project/turingmachine-24706/)
   
   ![Esquemático feito no schematics.com](http://i.imgur.com/qZa9w4y.png?1)
-  
+
+####Código para o Arduino
+  Disponível no repositório em main\main.ino
+   
 ##Resultado
 
 ####teste
@@ -66,11 +69,8 @@ https://youtu.be/ktRdkW8mEg4
 [![video Youtube](http://img.youtube.com/vi/ktRdkW8mEg4/0.jpg)](https://youtu.be/ktRdkW8mEg4)
 
 
-
-
-
 ##Créditos
-
+  Aos colegas [Matheus](https://github.com/matheusvervloet) e [Bruno](https://github.com/brunowilliamsap) pelas idéias sobre como desenvolver o projeto e ao professor [Ricardo Menotti](https://github.com/menotti) pelos ensinamentos na disciplina Microcontroladores e aplicações 2015/2 DC UFSCar.
 
 ## Outros trabalhos desta disciplina
 
