@@ -3,7 +3,7 @@
 #include "rgb_lcd.h"
 
 #define TEMPOINICIO 5
-#define VALORMEDIO 5
+#define VALORMEDIO 25
 
 const int stepsPerRevolution = 24;
 rgb_lcd lcd;
