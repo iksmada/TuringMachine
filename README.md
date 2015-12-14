@@ -52,7 +52,7 @@ Raphael Adamski 495913
 ####Esquemático
   Disponivel [aqui](http://schematics.com/project/turingmachine-24706/)
   
-  ![Esquemático feito no schematics.com](https://raw.githubusercontent.com/iksmada/TuringMachine/master/images/9.jpg)
+  ![Esquemático feito no schematics.com](https://raw.githubusercontent.com/iksmada/TuringMachine/master/images/9.png)
 
 ####Código para o Arduino
   Disponível no repositório em main\main.ino
